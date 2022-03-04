@@ -4,6 +4,8 @@ jieba分词的PyCall调用版本
 
 ## Install
 
+首先安装Jieba.jl库，并确保[PyCall](https://github.com/JuliaPy/PyCall.jl)绑定的Python环境中已经安装jieba分词库。
+
 ```shell
 julia> ]
 pkg> add https://github.com/lotcher/Jieba.jl.git
