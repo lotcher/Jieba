@@ -1,15 +1,16 @@
 module Jieba
 using PyCall
 
-export jieba, analyse
+export jieba, analyse, pseg
 export cut, cut_for_search
 
-const jieba, analyse = PyNULL(), PyNULL()
+const jieba, analyse, pseg = PyNULL(), PyNULL(), PyNULL()
 
 # https://github.com/JuliaPy/PyCall.jl#using-pycall-from-julia-modules
 function __init__()
     copy!(jieba, pyimport("jieba"))
     copy!(analyse, pyimport("jieba.analyse"))
+    copy!(pseg, pyimport("jieba.posseg"))
 end
 
 cut(msg; use_paddle = false, cut_all = false, HMM = false) = jieba.lcut(
