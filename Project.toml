@@ -1,6 +1,6 @@
 name = "Jieba"
 uuid = "b39fac2a-be77-446b-973f-d409bcc802d5"
-authors = ["bowaer <cb229435444@outlook.com> and contributors"]
+authors = ["bowaer <me@lbj.wiki> and contributors"]
 version = "0.1.0"
 
 [compat]
