@@ -2,6 +2,13 @@
 
 jieba分词的PyCall调用版本
 
+## Install
+
+```shell
+julia> ]
+pkg> add https://github.com/lotcher/Jieba.jl.git
+```
+
 ## Usage
 
 ## 分词
