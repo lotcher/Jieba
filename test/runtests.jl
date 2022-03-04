@@ -2,5 +2,6 @@ using Jieba
 using Test
 
 @testset "Jieba.jl" begin
-    # Write your tests here.
+    cut("我是真的大帅哥") |> println
+    cut_for_search("卡梅隆安东尼戴维斯") |> println
 end
